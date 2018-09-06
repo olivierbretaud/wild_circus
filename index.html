@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        
+        <meta charset="UTF-8">
+    
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        
+        <script>
+        $(document).ready(function() {
+            $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+            var page = $(this).attr('href'); // Page cible
+            var speed = 750; // Durée de l'animation (en ms)
+            $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+            return false;
+            });
+        });
+        </script>
+    
+    <title>Wild Circus</title>
+    </head>
+
+    <body>
+    <header>
+        <div class="container_nav">
+        <h1>Wild Circus</h1>
+        <nav>
+        <ul>
+            <li><a class="js-scrollTo" href="#contact">Contact</a></li>
+            <li><a class="js-scrollTo" href="#prices">Prices</a></li>
+            <li><a class="js-scrollTo" href="#perfo">Performances</a></li>
+            <li><a class="js-scrollTo" href="#about">About Us</a></li>
+            
+            
+            
+            
+        </ul>
+        </nav>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About Us</h2>
+    <div class="datacrobat">
+        <p>
+        <h5></a>We are</a></h5>
+        <h4><a>code</a><a>acrobats!</a></h4>
+        <h5><span class="blink_me">>></span><a>Please click</a><a>to play !</a><span class="blink_me"><<</span></h5>
+
+        </p>
+        </div>
+    </section>
+
+
+    
+    <section id="perfo">
+        <h2>Performances</h2>
+        <ul>
+            <li>
+                <h3>Laugh</h3>
+                <p>As an adult, come and discover our irresistible clowns, between practical jokes and pranks let yourself be carried away by their joy and fall back into childhood.</p>
+            </li>
+            <li>
+                <h3>Dream</h3>
+                <p>Let yourself be carried away in a world where the real and the imaginary are one, in the company of our talented magicians, discover a wonderful world limited only by your imagination.</p>
+            </li>
+            <li>
+                <h3>Marvel at</h3>
+                <p>Tame the untameable in the company of our tamers, between roar and razor-sharp claws, watch these fierce felines turn into sweet kittens.</p>
+            </li>
+        </ul>
+    </section>
+
+    
+
+
+
+    
+
+    <section id="prices">
+        <h2>Prices</h2>
+
+        <div class="table-container">
+        <table>
+        <tr>
+            <th></th>
+            <th>Adults</th> 
+            <th>Children under 12 years</th>
+            <th>Groups (more than 10 people)</th> 
+            <th>Schools</th> 
+        </tr>
+        
+        <tr>
+            <th>Weeks off Wednesday</th>
+            <td>22£</td>
+            <td>20£</td>
+            <td>21£</td>
+            <td>18£</td>
+        </tr>
+        <tr>
+            <th>weekend and wednesday</th>
+            <td>19£</td>
+            <td>20£</td>
+            <td>20£</td>
+            <td>20£</td>
+        </tr>
+        
+        </table>
+        
+        </div>
+        
+    </section>
+
+    
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+    
+    <div class="form-container">
+        <form action="/traitement.php" method="post">
+        <div>
+            <label for="name">Name :</label>
+            <input type="text" id="name" name="user_name"></input>
+        </div>
+    
+        <div>
+            <label for="mail">E-mail :</label>
+            <input type="email" id="mail" name="user_mail"></input>
+        </div>
+        
+        <div>
+            <label for="msg">Message :</label>
+            <textarea rows="4" cols="40" id="msg" name="user_message"></textarea>
+        </div>
+        
+        
+        <button type="submit" class="button">send the message</button>
+    
+        
+        </form>
+    </div>
+    </section>
+        
+
+
+    <footer>
+    
+        <p>
+        <a href="http://www.olivierbretaud.info" target="_blank">olivierbretaud.info</a>
+        <a href="http://www.france-ioi.org/user/perso.php?sLogin=olivierbretaud" target="_blank">France-IOI</a>
+        <a href="https://www.sololearn.com/Profile/9126915" target="_blank">SoloLearn</a>
+    
+        <a href="https://wildcodeschool.fr" target="_blank">Wild Code School</a>
+        </br>
+        Wild Circus by Olivier Bretaud - 24/04/18
+        </p>
+        
+    </footer>
+    </body>
+
+</html>
